@@ -89,7 +89,7 @@ export default function({ cityData }) {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className="container">
       {showModal && (
         <Modal trigger={handleModal}>
           <Chart data={comparisonData} />
@@ -122,13 +122,14 @@ export default function({ cityData }) {
         </thead>
         <tbody>{handleCityData()}</tbody>
       </table>
+      <div className="btn-container">
       <button
         onClick={() => handleModal()}
         disabled={comparisonData.length === 0}
       >
         Compare{" "}
         {comparisonData.length > 0 && !magnifyCity ? comparisonData.length : ""}
-      </button>
+      </button></div>
     </div>
   );
 }
