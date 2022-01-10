@@ -1,0 +1,114 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+thead,
+tbody,
+tr,
+td,
+th {
+  display: block;
+}
+
+tr:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+tbody {
+  height: 65vh;
+  overflow: auto;
+}
+
+tbody td,
+thead th {
+  width: 33.3%;
+  float: left;
+}
+
+table > thead > tr:first-child {
+  background-color: black;
+  font-size: larger;
+  position: sticky;
+  top: 2rem;
+  z-index: 10;
+  border-bottom: 1px solid white;
+}
+
+th {
+  padding: 1.5rem 0;
+  color: white;
+}
+
+td {
+  padding: 1rem 0;
+  font-size: large;
+
+  border-bottom: 1px solid white;
+}
+
+.good {
+  background-color: green;
+}
+
+.satisfactory {
+  background-color: rgb(125, 153, 125);
+}
+
+.moderate {
+  background-color: yellow;
+}
+
+.poor {
+  background-color: orange;
+}
+
+.very-poor {
+  background-color: orangered;
+}
+
+.severe {
+  background-color: red;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+button {
+  width: 20%;
+  padding: 0.75rem;
+  float: right;
+  margin: 0.5rem 0.5rem 0 0;
+  background-color: orchid;
+  color: white;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: medium;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: dimgrey;
+  color: gray;
+  cursor: default;
+}
+
+button:hover {
+  background-color: darkorchid;
+}
+
+.city-list {
+  margin-left: 2.5rem;
+}
+
+.city-list:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
